@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+    <style>
+        #txtvel{
+            width: 40px;
+            border: none;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.664);
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    <label for="txtvel">
+        <p>Velocidade do carro:
+        <input type="number" id="txtvel"  maxlength="4" required>
+        km/h</p>   
+    </label>
+    <input type="button" value="Verificar" onclick="caucular()">
+    <div id="resposta"></div>
+    <p id="multa"></p>
+
+
+    <script>
+        
+
+        function caucular(){
+            var txtv = document.getElementById('txtvel')
+            var resposta = document.getElementById('resposta')
+            var multa = document.getElementById('multa')
+            var vel = Number(txtv.value)
+
+            resposta.innerHTML = ('Sua velocidade atual é de ' + vel + 'km/h')
+
+            if(vel > 80){
+                multa.innerHTML = ("Você está acima da velocidade permitida. MULTADO!")
+            }
+        }
+    </script>
+</body>
+</html>
