@@ -34,6 +34,11 @@ input{
     margin: 10px;
 }
 
+#foto{
+    display: block;
+    text-align: center;
+}
+
 footer {
     padding: 30px;
     font-style: italic;

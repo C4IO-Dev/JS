@@ -9,37 +9,38 @@
     <script src="js/script.js"></script>
 </head>
 
-<body onload="carregar()">
+<body>
     <header>
         <h1>Verificador de Idade</h1>
     </header>
 
     <section class="principal">
-        <form action="verificador">
-            <label for="ano">
-                <p>Ano de Nascimento:
-                    <input type="number" name="ano" id="ano">
-                </p>
-            </label>
-            <label for="sexo">
-                <p>Sexo:
-                    <input type="radio" name="sexo" id="sexo">Masculino
-                    <input type="radio" name="sexo" id="sexo">Feminino
-            
-                </p>
-                <input type="submit" value="Verificar" id="verifica" onclick="verificar()">
-            </label>
-        </form>
-
-        <article id="resultado">
-            <p>Preencha os dados acima para ver o resultado!</p>
+        <article>
+            <p>Ano de Nascimento:
+                <input type="number" name="txtano" id="txtano" min="0">
+            </p>
+            <p>Sexo:
+                <input type="radio" name="radiosex" id="masc" checked>
+                <label for="masc">Masculino</label>
+                <input type="radio" name="radiosex" id="fem">
+                <label for="fem">Feminino</label>
+            </p>
+            <p>
+                <input type="button" value="Verificar" onclick="verificar()">
+            </p>
         </article>
 
+        <article>
+            <div id="resultado">
+                Preencha os dados acima para ver o resultado!
+            </div>
+        </article>
     </section>
 
     <footer>
-        <p class="copy">&copy;Copyright <span>caio_dev</span></p>
+        <p class="copy">&copy; Copyright <span>caio_dev</span></p>
     </footer>
+    
 </body>
 
 </html>
