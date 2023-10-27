@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de idade</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <script src="js/script.js"></script>
+</head>
+
+<body onload="carregar()">
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+
+    <section class="principal">
+        <form action="verificador">
+            <label for="ano">
+                <p>Ano de Nascimento:
+                    <input type="number" name="ano" id="ano">
+                </p>
+            </label>
+            <label for="sexo">
+                <p>Sexo:
+                    <input type="radio" name="sexo" id="sexo">Masculino
+                    <input type="radio" name="sexo" id="sexo">Feminino
+            
+                </p>
+                <input type="submit" value="Verificar" id="verifica" onclick="verificar()">
+            </label>
+        </form>
+
+        <article id="resultado">
+            <p>Preencha os dados acima para ver o resultado!</p>
+        </article>
+
+    </section>
+
+    <footer>
+        <p class="copy">&copy;Copyright <span>caio_dev</span></p>
+    </footer>
+</body>
+
+</html>
