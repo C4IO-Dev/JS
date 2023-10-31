@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Vamos contar</h1>
+    </header>
+
+    <section class="principal">
+        <article>
+
+            <label for="inicio">
+                <p>
+                    Inicio:
+                    <input type="number" name="inicio" id="inicio">
+                </p>
+            </label>
+
+            <br>
+
+            <label for="fim">
+                <p>
+                    Fim:
+                    <input type="number" name="fim" id="fim">
+                </p>
+            </label>
+
+            <br>
+
+            <label for="passo">
+                <p>
+                    Passo:
+                    <input type="number" name="passo" id="passo">
+                </p>
+            </label>
+
+            <br>
+
+            <input type="button" value="Contar" onclick="contar()">
+
+        </article>
+
+        <article id="res">
+            <p>Preparando Contagem...</p>
+        </article>
+    </section>
+
+    <footer>
+        <p class="copy">&copy; Copyright <span>caio_dev</span></p>
+    </footer>
+
+</body>
+
+</html>
